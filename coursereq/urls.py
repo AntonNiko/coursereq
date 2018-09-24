@@ -19,5 +19,6 @@ from django.conf.urls import handler403, handler404, handler500
 
 urlpatterns = [
     path('course_manager/', include("course_manager.urls")),
+    path('static/', include("course_manager.urls")),
     path('admin/', admin.site.urls),
 ]
